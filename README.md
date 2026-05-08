@@ -202,11 +202,11 @@ reports/screenshots/<nombre_escenario>_<timestamp>.png
 - **Tags** para ejecución selectiva.
 - **Logging estructurado** en lugar de prints.
 - **Configuración externalizada** vía variables de entorno del SO.
-- **Codigo comentado**
+- **Codigo comentado.**
 
 ---
 
-## 10. Resolución de problemas comunes
+## 10. Resolución de algunos problemas
 
 - **`playwright: command not found`** → activar el entorno virtual antes de ejecutar.
 - **Error al lanzar el navegador** → ejecutar `playwright install` para descargar los navegadores.
