@@ -1,0 +1,28 @@
+# Entorno virtual de Python
+venv/
+.venv/
+
+# Cache de Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Reportes y artefactos generados
+reports/report.html
+reports/screenshots/*
+!reports/screenshots/.gitkeep
+
+# Configuracion local del IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Metadata de Claude Code
+.claude/
+
+# Archivos sueltos generados accidentalmente por redirecciones de shell
+/behave_html_formatter
