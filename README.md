@@ -22,8 +22,8 @@ Estos tres casos juntos recorren las páginas críticas del sitio (home, búsque
 
 - **Python 3.11+** — lenguaje versátil y popular en QA.
 - **Playwright** — auto-waits robustos, soporte nativo cross-browser (Chromium, Firefox, WebKit), screenshots y trace integrados.
-- **Behave** — BDD en Gherkin, tests legibles por stakeholders.
-- **Faker** — datos dinámicos por ejecución (emails únicos), tests idempotentes.
+- **Behave** — BDD en Gherkin, tests legibles por stakeholders y usuarios no tecnicos.
+- **Faker** — datos dinámicos por ejecución (emails, nombres únicos), tests idempotentes.
 - **behave-html-formatter** — reporte HTML único, fácil de compartir.
 - **Page Object Model** — desacopla los selectores de la lógica de prueba.
 
@@ -38,7 +38,7 @@ opencart_desafioQA/
 │   ├── register.feature        # Feature: registro
 │   ├── search.feature          # Feature: búsqueda + carrito
 │   ├── checkout.feature        # Feature: guest checkout
-│   └── steps/                  # Step definitions (en español, comentarios incluidos)
+│   └── steps/                  # Step definitions 
 ├── pages/                      # Page Objects (selectores encapsulados por página)
 ├── utils/                      # config, data_factory (Faker), logger
 ├── reports/
@@ -53,9 +53,10 @@ opencart_desafioQA/
 
 ## 4. Pre-requisitos
 
-- Python 3.11 o superior — verificar con `python --version`
+- Python 3.11 o superior
 - pip
-- Conexión a internet (la suite usa el sitio público OpenCart de Abstracta)
+- Conexión a internet
+- Clonar repositorio: git clone https://github.com/GonzaloArevaloT/opencart-desafio-qa.git
 
 ---
 
@@ -92,7 +93,7 @@ playwright install
 
 ## 6. Variables de entorno
 
-Se leen del sistema operativo (no se utiliza dotenv).
+Se leen del sistema operativo.
 
 | Variable | Valores | Default | Descripción |
 |----------|---------|---------|-------------|
@@ -196,13 +197,12 @@ reports/screenshots/<nombre_escenario>_<timestamp>.png
 
 - **Page Object Model** — cada página encapsula sus selectores y acciones.
 - **Datos dinámicos con Faker** — emails únicos por ejecución, tests idempotentes.
-- **Scenario Outlines** — parametrización nativa de Gherkin (ver `search.feature`).
+- **Scenario Outlines** — parametrización nativa de Gherkin.
 - **Hooks de Behave** — aislamiento por escenario, navegador limpio en cada test.
-- **Auto-waits de Playwright** — sin sleeps fijos, reduce flakiness.
 - **Tags** para ejecución selectiva.
 - **Logging estructurado** en lugar de prints.
 - **Configuración externalizada** vía variables de entorno del SO.
-- **Comentarios en español** en todo el código Python; **features en inglés** (estándar internacional de BDD).
+- **Comentarios en .
 
 ---
 
