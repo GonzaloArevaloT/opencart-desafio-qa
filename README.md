@@ -1,4 +1,4 @@
-# opencart_desafioQA
+# Pruebas Automatizadas Desafio Opencart
 
 Suite de automatización de pruebas funcionales sobre [https://opencart.abstracta.us/](https://opencart.abstracta.us/) construida con **Python + Playwright + Behave (BDD)**, siguiendo el patrón **Page Object Model**.
 
