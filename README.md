@@ -202,7 +202,7 @@ reports/screenshots/<nombre_escenario>_<timestamp>.png
 - **Tags** para ejecución selectiva.
 - **Logging estructurado** en lugar de prints.
 - **Configuración externalizada** vía variables de entorno del SO.
-- **Comentarios en .
+- **Codigo comentado**
 
 ---
 
